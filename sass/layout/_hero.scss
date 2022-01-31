@@ -23,10 +23,9 @@
 
   &__title {
     color: var(--additional-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.37;
-    letter-spacing: 0.06em;
+
+    @include fontText(900, 44px, 1.37, 0.06em);
+
     text-transform: uppercase;
 
     max-width: 694px;

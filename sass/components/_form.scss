@@ -1,9 +1,7 @@
 .form-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fontText(700, 20px, 1.15, 0.03em);
+
   text-align: center;
-  letter-spacing: 0.03em;
   display: block;
 
   color: var(--primary-text-color);
@@ -17,9 +15,8 @@
   margin-bottom: 10px;
 
   &__text {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include fontText(null, 12px, 1.17, 0.01em);
+
     display: block;
 
     color: var(--secondary-text-color);
@@ -72,9 +69,7 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include fontText(null, 12px, 1.17, 0.01em);
 
     color: rgba(117, 117, 117, 0.5);
   }
@@ -111,21 +106,12 @@
   }
 }
 
-// .checkbox {
-//   -webkit-appearance: none;
-//   -moz-apappearance: none;
-//   appearance: none;
-//   position: absolute;
-// }
-
 .form-checkbox {
   display: block;
   margin-top: 20px;
 
   &__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include fontText(null, 14px, 1.71, 0.03em);
 
     display: flex;
     align-items: center;

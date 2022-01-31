@@ -5,11 +5,9 @@
 
   &__title {
     color: var(--primary-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include fontText(700, 36px, 1.16, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
 
     margin-bottom: 50px;
   }
@@ -36,21 +34,16 @@
 
   &__name {
     color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @include fontText(500, 16px, 1.18, 0.03em);
 
+    text-align: center;
     margin-bottom: 10px;
   }
 
   &__position {
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @include fontText(null, 16px, 1.18, 0.03em);
 
+    text-align: center;
     margin-bottom: 16px;
   }
 

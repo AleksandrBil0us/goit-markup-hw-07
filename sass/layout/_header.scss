@@ -34,10 +34,8 @@
 
 .header__link {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+
+  @include fontText(500, 14px, 1.14, 0.02em);
 
   text-decoration: none;
 
@@ -90,10 +88,7 @@
 }
 .header__contacts-link {
   color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fontText(500, 14px, 1.14, 0.02em);
 
   padding-top: 32px;
   padding-bottom: 32px;
